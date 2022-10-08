@@ -1,0 +1,212 @@
+html {
+    background: url(Fondo\ canvas\ def.jpg); 
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+   
+} 
+
+body {
+    margin:0; 
+    display: flex;
+    min-height: 100vh; 
+    flex-direction: column;
+    text-align: center; 
+    align-items: center; 
+    font-family:'Gloria Hallelujah', cursive;
+}
+
+header h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 40px; 
+    color: #ff3333; 
+    padding: 15px; 
+    margin: 15px; 
+    font-weight: bold; 
+}
+
+/* Menu Inicio */
+
+.botones-inicio {
+    display: flex;
+}
+
+
+#btn-iniciar, #btn-nPalabra {
+    top: 200px;
+    border-radius: 20px; 
+    margin: 10px;
+    width: 220px; 
+    height: 110px;  
+    position:relative; 
+    flex-wrap: wrap; 
+    display: block; 
+    font-family: 'Gloria Hallelujah', cursive; 
+    font-size: 20px;
+
+} 
+
+#btn-iniciar {
+    background-color: #9900cc; 
+    color:aliceblue;
+} 
+
+#btn-nPalabra {
+    background-color: #e3adf5;
+} 
+
+#btn-iniciar:hover {
+    background-color: #c004ff; 
+    font-size: 25px; 
+    font-weight: bold;
+} 
+
+#btn-nPalabra:hover {
+    background-color: #edc1fc; 
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Menu Juego */
+
+canvas {
+    border-radius: 15px;
+}
+
+.area-palabra {
+    color: #ff6666; 
+    font-weight: bold; 
+    font-size: 35px; 
+    margin-top:25px; 
+    margin-bottom: 25px;
+}  
+
+.area-palabra-error {
+    color: #911111; 
+    font-weight: bold; 
+    font-size: 35px; 
+    margin-top:25px; 
+    margin-bottom: 25px;
+} 
+
+#btn-nuevo-juego, #btn-rendirse{
+    display: inline-block; 
+    width: 150px; 
+    height: 70px; 
+    border-radius: 20px;  
+    font-family: 'Gloria Hallelujah', cursive; 
+    font-size: 15px;
+}
+
+#btn-nuevo-juego {
+    background-color: #9900cc; 
+    color:aliceblue;
+} 
+
+#btn-rendirse {
+    background-color: #e3adf5;
+}
+
+#btn-nuevo-juego:hover {
+    background-color: #c005ff; 
+    color:aliceblue; 
+    font-size: 20px; 
+    font-weight: bold;
+}  
+
+#btn-rendirse:hover {
+    background-color: #be0b29; 
+    font-size: 20px; 
+    font-weight: bold; 
+    color:aliceblue;  
+} 
+
+#msjGanador {
+    color: green; 
+    font-weight: bold; 
+    margin: 10px; 
+    font-size: 20px; 
+} 
+
+#msjPerdedor {
+    color: red; 
+    font-weight: bold; 
+    margin: 10px; 
+    font-size: 20px; 
+}
+
+/* Menu Agregar Palabra */
+
+.parrafo-instrucciones {
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.areaNuevaPalabra {
+    display: inline-block;
+}
+
+.titulo-lista {
+    font-weight: bold; 
+    font-size: 25px; 
+    margin: 10px; 
+    text-decoration: underline; 
+    color:#dc86f8;
+} 
+
+#labelTexto {
+    margin-top: 10px; 
+    font-weight: bold;
+} 
+
+#area_nueva_palabra {
+    border-radius: 7px; 
+    border-style: none; 
+    height: 20px; 
+    background-color:#8206ac; 
+    color:white;
+} 
+
+::placeholder {
+    color:white;
+}
+
+.btns-palabra {
+    display: block;
+}  
+
+#btn-añadirPalabra, #btn-iniciarJuego {
+    width: 150px; 
+    height: 70px; 
+    border-radius: 20px;  
+    font-family: 'Gloria Hallelujah', cursive; 
+    font-size: 15px;
+} 
+
+#btn-añadirPalabra {
+    background-color:#9900cc; 
+    color: aliceblue;
+} 
+
+#btn-iniciarJuego {
+    background-color: #e3adf5;
+}
+
+
+#listaContainer {
+    font-family:'Gloria Hallelujah', cursive;  
+    display: inline-block; 
+    text-align: justify; 
+    align-items: center;
+    position: relative;
+    margin: 5px; 
+    padding: 10px; 
+    font-weight: bold; 
+    font-size: 20px; 
+    color:#9708c7;
+} 
+
+
+
+

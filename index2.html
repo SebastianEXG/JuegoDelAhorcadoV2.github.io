@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="reset.css"> 
+    <title>Juego del Ahorcado V1</title>
+</head>
+<body> 
+    <header>
+        <h1>Juego del Ahorcado</h1>
+    </header>
+    <div class = "agregarPalabra"> 
+        <p>Agrega una o mas palabras y luego selecciona GUARDAR CAMBIOS </p> 
+        <label for="Escribir Palabra Nueva">Escribe la palabra</label>
+        <input type="text" id="area_nueva_palabra" class="areaNuevaPalabra" name="areaNP" maxlength="8" placeholder="Max. 8 caracteres" pattern="[A-Z]"> 
+        <div class = "listaPalabras" id="lista-palabras">
+            <ul id = "listaContainer">
+            </ul>
+        </div>
+        <div class = "btns-palabra" id="btns-palabra"> 
+        <input type="submit" id="añadirPalabra" class="añadir-palabra" value="Añadir Palabra" onclick="añadirElemento()"> 
+        <a href="index.html">
+        <input type="button" id="btn-iniciar" class="btn-inicio" value="Guardar Cambios" onclick="iniciarJuego()"> 
+        </a>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+    <script src="canvas.js"></script> 
+    <script src="app2.js"></script>
+</body>
+</html>

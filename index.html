@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="reset.css"> 
+    <link rel="stylesheet" href="styles.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <title>Juego del Ahorcado V2.0</title>
+</head>
+<body>
+    <header>
+        <h1>Juego del Ahorcado</h1>
+    </header>
+    <main>
+        <section id="menuInicio">
+        <div class="botones_inicio">
+        <input type="submit" id="btn-iniciar" class="btn-inicio" value= "Iniciar Juego" onclick="iniciarJuego()">
+        <input type="submit" id="btn-nPalabra" class="btn-nPalabra" value= "Agregar Palabra" onclick = "menuPalabras()">
+        </div>
+        </section> 
+        <section id="menuAgrPalabra" style="display: none;">
+            <div class = "agregarPalabra"> 
+                <p class = "parrafo-instrucciones">Agrega una o mas palabras y luego selecciona GUARDAR CAMBIOS </p> 
+                <label for="Escribir Palabra Nueva" id="labelTexto">Escribe la palabra</label>
+                <input type="text" id="area_nueva_palabra" class="areaNuevaPalabra" name="areaNP" maxlength="8" placeholder="Max. 8 caracteres" required> 
+                <div class = "listaPalabras" id="lista-palabras">
+                    <p class="titulo-lista">Lista de Palabras</p>
+                    <ul id = "listaContainer">
+                    </ul>
+                </div>
+                <div class = "btns-palabra" id="btns-palabra"> 
+                <input type="submit" id="btn-añadirPalabra" class="btn-añadir-palabra" value="Añadir Palabra" onclick="añadirElemento()"> 
+                <input type="button" id="btn-iniciarJuego" class="btn-inicio" value="Guardar Cambios" onclick="iniciarJuego()"> 
+                </a>
+                </div>
+            </div>
+        </section>
+        <section id="menuJuego" style="display: none;">
+        <div class="canvas">
+            <canvas width= "400" height="400" id="area_de_dibujo"></canvas>
+        </div>
+        </div> 
+        <div class="area-palabra" ><p id="areaPalabra"></p></div>  
+        <div class="area-palabra-error" ><p id="areaPalabraError"></p></div>
+        <div id="botones-juego">
+            <input type="button" id="btn-nuevo-juego" value="Nuevo Juego" onclick="reiniciar()"> 
+            <input type="button" id="btn-rendirse" value="Rendirse" onclick="rendicion()">
+        </div> 
+        <div id="msjGanador">
+        
+        </div> 
+        <div id="msjPerdedor">
+            
+        </div>
+        </section> 
+       
+    </main> 
+    <footer>
+
+    </footer>
+    <script src="app.js"></script> 
+    <script src="app2.js"></script>
+    <script src="canvas.js"></script> 
+    <audio preload="auto">
+        <source src="sm64_coin.wav" type="audio/wav">
+    </audio>
+</body>
+</html>
